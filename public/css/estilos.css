@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+body {
+    font-family: "Roboto";
+    background-color: #ebebeb
+  }  
+
+  .articulo:hover .descripcion{
+    display:block;
+  }
+
+  .articulo {
+margin-bottom: 10px;
+padding: 15px;
+padding-left: 30px;
+padding-right: 30px;
+
+  }
+
+  /* .articulo img {
+padding: 15px;
+padding-left: 20px;
+padding-right: 20px;
+  } */
+
+  header {
+    background-color: #EAC926
+  }
+
+ 
+
+  .detallesArticulo {
+   border-top: 1px solid #ebebeb;
+   background-color: white;
+   padding: 15px;
+   position: relative;
+  
+  
+    }
+
+
+    .truck {
+      color: green;
+      border: solid green;
+      border-radius: 50%;
+      padding: 10px;
+      position: absolute;
+      right: 10px; 
+      top: -20px;
+      background-color: white;
+      transition:all 1s
+    }
+
+  main {
+    width: 90%;
+    margin: auto;
+    background-color: #ebebeb;
+  }
+
+  .contenedorarticulo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  main img {
+    width: 100%;
+    background-color: #ebebeb
+  }
+
+ .botonn {
+   width: 50%;
+ }
+.botonn button{
+  width: 10%
+}
+
+ .botonn input{
+   width: 80%;
+   margin-left: 10px;
+ }
+  .principal {
+    width: 100vw;
+    padding:20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  .principal img {
+    width: 50%;
+  }
+
+.contenedorNavbar {
+display: none
+}
+
+  .contenedorNavbar ul{
+    list-style: none;
+  }
+
+  .contenedorBanner {
+    width : 100vw;
+  }
+
+  .contenedorBanner img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contenedorNavbar ul a {
+    text-decoration: none;
+    color:black;
+  }
+
+  .precio {
+    font-size: 18px;
+    width : 30%;
+    display : inline
+  }
+
+  .desc {
+    font-size: 16px;
+    color: green;
+    width : 70%;
+    display : inline;
+    margin-left: 20px;
+
+  }
+  
+  .bas {
+    font-size: 24px;  
+  }
+  
+  /* seleccionador global, margin y padding para quitar espacios */
+  * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #divc {
+    text-align: center;
+  }
+  
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .burger-menu {
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.totalPrecio {
+  display : flex;
+}
+
+.barra {
+  font-size: 20px;
+  background-color: #1259c3;
+    padding: 20px 20px;
+    border-radius: 10px;  
+}
+  
+footer {
+  text-align: center;
+  margin-top: 70px;
+  width: 100%;
+  background-color: white;
+  padding-top: 30px;
+  
+}
+
+
+.itemfooter {
+  width:30%
+}
+
+footer i {
+  text-align: center;
+  font-size : 2em;
+  margin-bottom : 10px;
+  color: #1259c3;
+ 
+}
+
+.descripcion {
+display: none;
+}
+
+.formregister {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formregister input[type="checkbox"]{
+  height: auto;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+  
+}
+.login button:hover {
+background:#0022AA
+}
+
+.login button {
+  width: 100%;
+  background-color: #0b7dda;
+  margin-top: 45px;
+  color:white;
+  height: 25px;
+}
+
+.login label {
+  font-weight: bold;
+  margin-top: 30px
+
+}
+
+.login input{
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  height: 25px
+  
+}
+
+.formregister input {
+  border-radius: 5px;
+  border: none;
+  width: 90%;
+  height: 25px
+}
+.formregister button {
+  margin-top:20px;
+}
+
+.formregister label {
+  margin-top: 35px;
+  font-size: 18px;font-weight: bold;
+
+}
+
+
+@media (min-width:768px) {
+ .articulo:hover{ box-shadow: 0px 0px 10px rgb(100, 100, 100);
+ }
+.articulo:hover .truck{
+  transform: rotate(-90deg);
+}
+
+.articulo {
+  width: 50%;
+}
+ .articulo:hover .descripcion{
+  display:block;
+}
+ 
+
+ .descripcion {
+   display: none
+
+ }
+ .contenedorNavbar {
+   display: block;
+ }
+ .burger-menu {
+  display: none}
+
+  .principal img {
+    width: 30%;
+  }
+  .botonn{
+    width: 30%
+  }
+  .divc {
+    width:30%
+  }
+
+  .contenedorNavbar {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px
+  }
+.contenedorNavbar li{
+  display: inline;
+  margin-right:10px
+}
+  
+  .principal {
+    flex-wrap: nowrap ;
+  }
+
+}
+@media (min-width: 1200px) {
+  .articulo{
+    width: 23%
+  }
+  .footer{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .itemfooter {
+    width: 30%;
+  }
+  #copy {
+    width:100%;
+    text-align: left;
+    margin-top: 40px;
+    font-weight: lighter;
+  }
+}
+
